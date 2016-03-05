@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: #000;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+em {
+    font-style: normal;
+}
+
+.focusable{
+    cursor: pointer;
+}
+#viewport {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 720px;
+    background: transparent url('../img/720/bg.png') no-repeat top left;
+    overflow: hidden;
+}
+
+#app-overlay {
+    display: none;
+    position: absolute;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    bottom: 35px;
+    width: 883px;
+    background: transparent;
+}
+#app-overlay .menu-overlay{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 80px;
+}
+
+.scene {
+    display: none;
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 100%;
+}
+
+.scene-float {
+    z-index: 91;
+    background: rgba(0,0,0,0.75);
+}
+
+.scene .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 720px;
+    z-index: 12;
+}
+
+#navigation {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 79px;
+    border-bottom: 1px solid #292929;
+}
+#navigation > .top-navigation {
+    float: left;
+    width: 1280px;
+    height: 80px;
+    text-align: center;
+}
+
+#navigation > .top-navigation > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 80px;
+    display: inline-block;
+    padding-right: 200px;
+}
+#navigation > .top-navigation > ul li {
+    display: inline-block;
+    margin: 32px 20px 0 20px;
+    /*text-transform: uppercase;*/
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+}
+#navigation > .top-navigation > ul li.focus {
+    color: #0d84e0;
+}
+
+#navigation > .top-navigation > ul li.focus{
+    background-position: 0 -40px;
+}
+
+#navigation > .top-navigation > .overlay{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+

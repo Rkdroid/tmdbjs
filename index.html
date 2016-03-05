@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TmdbTV App</title>
+
+    <link rel="stylesheet" type="text/css" href="app/assets/css/main.css"/>
+
+    <script src="app/lib/jquery/jquery.js"></script>
+
+    <script src="app/core/main.js"></script>
+    <script src="app/core/module/helpers.js"></script>
+    <script src="app/core/module/events.js"></script>
+    <script src="app/core/module/device.js"></script>
+    <script src="app/core/module/control.js"></script>
+    <script src="app/core/module/defer.js"></script>
+    <script src="app/core/module/deferrable.js"></script>
+    <script src="app/core/module/focus.js"></script>
+    <script src="app/core/module/mouse.js"></script>
+    <script src="app/core/module/promise.js"></script>
+    <script src="app/core/module/router.js"></script>
+    <script src="app/core/module/scene.js"></script>
+    <script src="app/core/module/snippet.js"></script>
+    <script src="app/core/module/ajax.js"></script>
+    <script src="app/core/module/i18n.js"></script>
+    <script src="app/core/module/tmdbApi.js"></script>
+
+    <script src="config.js"></script>
+
+    <script src="app/components/coverlist.js"></script>
+    <script src="app/components/navigation.js"></script>
+
+    <script src="app/pages/home/tmdbHome.js"></script>
+
+    <script src="app/app.js"></script>
+</head>
+<body>
+<div id="viewport">
+    <div id="navigation">
+        <div class="top-navigation">
+            <div class="logo"></div>
+            <ul>
+                <li class="focusable active" data-scene="popular">
+                    <span data-tr="popular">Popular</span>
+                </li>
+                <li class="focusable" data-scene="toprated">
+                    <span data-tr="toprated">Top Rated</span>
+                </li>
+                <li class="focusable" data-scene="upcoming">
+                    <span data-tr="upcoming">Upcoming</span>
+                </li>
+                <li class="focusable" data-scene="nowplaying">
+                    <span data-tr="nowplaying">Now Playing</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="scene" id="scene-tmdb-tpl" style="display: none;">
+    <div class="grid-wrap">
+        <ul class="grid"></ul>
+    </div>
+</div>
+</body>
+</html>
